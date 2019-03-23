@@ -1,0 +1,16 @@
+{% extends 'school_manage_template.html' %}
+
+{% block myhead %}
+
+{% endblock %}
+
+
+
+{% block mybody%}
+    <form action="" method="post">
+        <input type="text" name="class_name" placeholder="班级名称">
+        <input type="text" name="class_type" placeholder="年级">
+        <input type="submit" value="提交数据">
+        {% csrf_token %}
+    </form>
+{% endblock %}

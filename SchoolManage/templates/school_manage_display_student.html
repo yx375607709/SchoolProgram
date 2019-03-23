@@ -1,0 +1,66 @@
+{% extends 'school_manage_template.html' %}
+
+{% block myhead %}
+    <style>
+        table{
+            border-collapse: collapse;
+            font-size: 12px;
+            text-align: center;
+        }
+    tr,td{
+        border: 1px solid blue;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    div>a{
+        font-size: 20px;
+        padding: 20px;
+    }
+    </style>
+{% endblock %}
+
+{% block mybody%}
+    <div>
+        <a href="add_student">新增学生</a>
+{#        <a href="display_student">显示学生</a>#}
+    </div>
+<table>
+    <tr>
+        <td>姓名</td><td>性别</td><td>学生电话</td><td>注册日期</td><td>生源类型</td>
+        <td>身份证</td><td>户籍所在地</td><td>第二联系人</td><td>专业</td><td>现居住地</td>
+        <td>状态</td><td>备注</td><td colspan="2">编辑</td>
+    </tr>
+    {% for foo in obj %}
+        <tr>
+            <td>{{ foo.student_name }}</td>
+            <td>
+                {% if foo.gender %}
+                    女
+                {% else %}
+                    男
+                {% endif %}
+            </td>
+            <td>{{ foo.student_tel }}</td>
+            <td>{{ foo.register_date }}</td>
+            <td>{{ foo.student_type }}</td>
+            <td>{{ foo.id_card }}</td>
+            <td>{{ foo.location_of_household_registration }}</td>
+            <td>{{ foo.tel_two }}</td>
+            <td>{{ foo.major }}</td>
+            <td>{{ foo.address }}</td>
+            <td>
+                {% if foo.status %}
+                    毕业
+                {% else %}
+                    在读
+                {% endif %}
+            </td>
+
+            <td>{{ foo.market }}</td>
+{#            <td><input type="text" name="url" value="{{ url }}"></td>#}
+            <td><a href="delete_student.html?cid={{ foo.id }}">删除</a></td>
+            <td><a href="update_student.html?cid={{ foo.id }}">更新</a></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

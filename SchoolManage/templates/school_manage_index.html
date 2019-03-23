@@ -1,10 +1,29 @@
 {% extends 'school_manage_template.html' %}
 
-{% block head %}
+{% block myhead %}
 
 {% endblock %}
 
 
-{% block body %}}
-
+{% block mybody %}
+    <div>
+        <a href="add_class" >新增班级</a>
+        <a href="display_student">学生管理</a>
+{#        <a href="display_student" target="_blank">显示学生</a>#}
+    </div>
+    <table>
+        <tr>
+            <td><h3>班级</h3></td>
+            <td><h3>年级</h3></td>
+            <td colspan="2"><h3>编辑</h3></td>
+        </tr>
+        {% for foo in obj %}
+            <tr>
+                <td><h4>{{ foo.class_name }}</h4></td>
+                <td><h4>{{ foo.class_type }}</h4></td>
+                <td><a href="del_class_info.html?cid={{ foo.id }}">删除</a></td>
+                <td><a href="up_class_info.html?cid={{ foo.id }}">更新</a></td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

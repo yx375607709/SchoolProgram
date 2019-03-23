@@ -1,0 +1,22 @@
+{% extends 'school_manage_template.html' %}
+
+
+{% block myhead %}
+
+{% endblock %}
+
+{% block mybody %}
+    <form action="" method="post">
+        {% for foo in obj %}
+            <input type="text" name="class_name" value="{{ foo.class_name}}">
+            <input type="text" name="class_type" value="{{ foo.class_type}}">
+            <input type="text" name="cid" value="{{ foo.id}}" style="display: none">
+            <input type="submit" value="提交">
+        {% endfor %}
+        {% csrf_token %}
+    </form>
+{% endblock %}
+
+
+
+
