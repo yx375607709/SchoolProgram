@@ -1,11 +1,11 @@
 {% extends 'school_manage_template.html' %}
 
 
-{% block myhead %}
+{% block db_main_style %}
 
 {% endblock %}
 
-{% block mybody %}
+{% block db_main_body %}
     <form action="" method="post">
         {% for foo in obj %}
             <input type="text" name="class_name" value="{{ foo.class_name}}">

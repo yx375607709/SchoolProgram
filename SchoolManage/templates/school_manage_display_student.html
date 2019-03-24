@@ -1,6 +1,6 @@
 {% extends 'school_manage_template.html' %}
 
-{% block myhead %}
+{% block db_main_style %}
     <style>
         table{
             border-collapse: collapse;
@@ -19,11 +19,7 @@
     </style>
 {% endblock %}
 
-{% block mybody%}
-    <div>
-        <a href="add_student">新增学生</a>
-{#        <a href="display_student">显示学生</a>#}
-    </div>
+{% block db_main_body%}
 <table>
     <tr>
         <td>姓名</td><td>性别</td><td>学生电话</td><td>注册日期</td><td>生源类型</td>
@@ -58,8 +54,8 @@
 
             <td>{{ foo.market }}</td>
 {#            <td><input type="text" name="url" value="{{ url }}"></td>#}
-            <td><a href="delete_student.html?cid={{ foo.id }}">删除</a></td>
-            <td><a href="update_student.html?cid={{ foo.id }}">更新</a></td>
+            <td><a href="{% url 'delete_student.html' %}?cid={{ foo.id }}">删除</a></td>
+            <td><a href="{% url 'update_student.html' %}?cid={{ foo.id }}">更新</a></td>
         </tr>
     {% endfor %}
 </table>

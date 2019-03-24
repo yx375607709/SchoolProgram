@@ -1,0 +1,51 @@
+div{
+    /*{#整个数据显示容器#}*/
+    margin:0 auto;
+    width: 800px;
+    }
+form{
+    /*{#整个表单提交#}*/
+    margin:0 auto;
+    font-size: 16px;
+    border: 1px solid blue;
+    }
+.d1{
+    /*{#左右容器#}*/
+    float: left;
+    width: 50%;
+    }
+.radio{
+    /*{#单选按钮#}*/
+    float: left;
+    width: 15px;
+    height: 15px;
+    }
+table{
+    margin: auto auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+tr{
+    height: 40px;
+    padding: 20px;
+    line-height: 40px;
+    }
+td{
+    width: 100px;
+    height: 40px;
+    }
+input{
+    width: 200px;
+    height: 20px;
+    margin-left: 5px;
+    }
+#select{
+    width: 204px;
+    height: 24px;
+    margin-left: 5px;
+    }
+.sbm{
+    height: 30px;
+    width: 120px;
+    margin-left: 40px;
+    }

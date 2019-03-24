@@ -1,0 +1,151 @@
+#search{
+    border-radius: 15px;
+    width: 45%;
+    height: 28px;
+    background-color: rgba(198,198,198,1);
+    padding-left: 40px;
+    outline: none;
+}
+.search_btn{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: -48%;
+    outline: none;
+}
+@media (max-width: 1500px) {
+    #search{
+        padding-left: 45px;
+    }
+}
+.floor_1_left{
+    padding-top: 35px;
+}
+.floor_1_middle{
+    padding-top: 15px;
+}
+.words{
+    /*padding-top: px;*/
+    line-height: 60px;
+    font-size: 26px;
+}
+#nine_point{
+     height: 26px;
+    position: relative;
+    top:-5px;
+}
+#blackP{
+    position:relative;
+    top:-10px;
+}
+.no1_part{
+    height:100px;
+    background-color: #f3f6f6;
+    border-bottom:3px solid lightgray;
+}
+.up_cloud{
+    position: relative;
+    top: 35px;
+}
+.down_list{
+    padding-top: 15px;
+}
+.menu_content{
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+.menu_content a{
+    color: white;
+}
+.down_list_image:hover ~.menu .menu_content {
+    display: block ;
+}
+.menu:hover .menu_content{
+    display: block;
+}
+.no2_part{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.part2_1{
+    height:80%;
+    margin-top:140px;
+    float:left;
+    padding: 0;
+}
+.part2_2{
+    padding: 0;
+    padding-top: 50px;
+}
+.part2_3{
+    padding: 0;
+}
+.left_func{
+    list-style:none;
+    padding-left: 0;
+    line-height: 30px;
+}
+.left_func_content{
+    margin-bottom:10px;
+}
+.left_func_content>a{
+    text-decoration:none;
+    color:black;
+}
+.nav{
+    height:30px;
+    margin-top:10px;
+}
+.nav_li{
+    font-size: 18px;
+    width: 14.28%;
+    float: left;
+    background: rgba(0,0,0,0);
+
+}
+.nav_li span{
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.nav_li a{
+    color: black;
+    padding: 0 !important;
+}
+.nav_li a{
+    padding: 0 !important;
+    background: rgba(0,0,0,0) !important;
+}
+.cur{
+    border-bottom: 2px coral solid;
+}
+.limit{
+    height:30px;
+    margin-top:40px;
+}
+.limit>span{
+    font-size:25px;
+}
+.limit>a{
+    float:right;
+    position:relative;
+    top:10px;
+}
+#sq{
+    margin-left:10px;
+}
+.detail{
+    margin-top:30px;
+    font-size: 16px;
+}
+.detail>a{
+    text-decoration:none;
+    color:black;
+}
+.hr_detail{
+    border: 1px black solid;
+}
+.sort_bt{
+    padding-top: 140px;
+}

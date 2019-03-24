@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b0260b41-a10c-4aa8-baa6-f5d38c9b4abc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManage/statics/school_manage_template.css" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/statics/school_manage_template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_class.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SchoolManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SchoolManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolManage/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolProgram/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolProgram/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolProgram/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolProgram/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,36 @@
       <set />
     </option>
     <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="School: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default2" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default2" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default2" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="School: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="School@localhost" type="feb32156:DbDataSourceImpl" />
@@ -61,11 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchoolManage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+            <state relative-caret-position="144">
+              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -74,31 +104,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html">
+        <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="162" column="65" lean-forward="true" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
+            <state relative-caret-position="290">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_display_class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolManage/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="e#154#186#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -110,6 +128,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -127,22 +146,26 @@
         <option value="$PROJECT_DIR$/SchoolManage/statics/school_manage_template.css" />
         <option value="$PROJECT_DIR$/SchoolManage/templates/up_class_info.html" />
         <option value="$PROJECT_DIR$/SchoolManage/templates/add_c.html" />
-        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html" />
         <option value="$PROJECT_DIR$/SchoolManage/models.py" />
-        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html" />
-        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html" />
-        <option value="$PROJECT_DIR$/SchoolManage/urls.py" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_class.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_class.html" />
         <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/statics/css/school_manage_add_student.css" />
         <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html" />
         <option value="$PROJECT_DIR$/SchoolManage/views.py" />
+        <option value="$PROJECT_DIR$/SchoolManage/urls.py" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html" />
+        <option value="$PROJECT_DIR$/SchoolManage/templates/school_manage_display_class.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="58" />
-    <option name="y" value="19" />
-    <option name="width" value="1177" />
-    <option name="height" value="703" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="283" />
+    <option name="width" value="1221" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -152,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +203,13 @@
               <item name="SchoolProgram" type="b2602c69:ProjectViewProjectNode" />
               <item name="SchoolProgram" type="462c0819:PsiDirectoryNode" />
               <item name="SchoolManage" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SchoolProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SchoolProgram" type="462c0819:PsiDirectoryNode" />
+              <item name="SchoolManage" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,6 +226,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,12 +235,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SchoolManage/statics" />
       <recent name="$PROJECT_DIR$/SchoolManage/templates" />
       <recent name="$PROJECT_DIR$/statics" />
       <recent name="$PROJECT_DIR$/SchoolManage/statics/school_manage_template_img" />
@@ -269,16 +301,18 @@
       <workItem from="1553311045925" duration="1685000" />
       <workItem from="1553320309862" duration="12440000" />
       <workItem from="1553336381726" duration="12526000" />
+      <workItem from="1553349257054" duration="348000" />
+      <workItem from="1553395834993" duration="5566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31395000" />
+    <option name="totallyTimeSpent" value="37309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="732" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="732" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24546827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -299,22 +333,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32980457" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.13066465" />
+      <window_info anchor="right" id="Database" order="4" weight="0.17217982" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SchoolManage/views.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/statics/school_manage_template.css" />
@@ -367,27 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_up_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_add_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SchoolManage/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -409,51 +411,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html">
+    <entry file="file://$PROJECT_DIR$/SchoolManage/statics/css/school.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+        <state relative-caret-position="-702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_add_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html">
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_up_class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="126">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/statics/css/school_manage_add_student.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_add_student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="162" column="65" lean-forward="true" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
+        <state relative-caret-position="234">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SchoolManage/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="162">
+          <caret line="15" column="91" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
           <folding>
             <element signature="e#154#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_up_student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SchoolManage/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+        <state relative-caret-position="144">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
           <folding>
             <element signature="e#0#71#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_display_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolManage/templates/school_manage_display_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
         </state>
       </provider>
     </entry>

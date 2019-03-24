@@ -1,72 +1,10 @@
 {% extends 'school_manage_template.html' %}
-
-{% block myhead %}
-    <style>
-        div{
-            {#整个数据显示容器#}
-            margin:0 auto;
-            width: 800px;
-            {#height: 500px;#}
-        }
-        form{
-            {#整个表单提交#}
-            {#width: 1000px;#}
-            {#background-color: rebeccapurple;#}
-            margin:0 auto;
-            font-size: 16px;
-            border: 1px solid blue;
-        }
-        .d1{
-            {#左右容器#}
-            float: left;
-            width: 50%;
-        }
-        .styd1{
-            {#左边容器#}
-            {#background-color: #2e6da4;#}
-        }
-        .styd2{
-            {#右边容器#}
-            {#background-color: rebeccapurple;#}
-        }
-        .radio{
-            {#单选按钮#}
-            width: 15px;
-            height: 15px;
-        }
-    table{
-        margin: auto auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    tr{
-        {#display: inline-block;#}
-        height: 40px;
-        padding: 20px;
-        line-height: 40px;
-        }
-    td{
-        width: 100px;
-    }
-    input{
-        width: 200px;
-        height: 20px;
-        margin-left: 5px;
-    }
-    #select{
-        width: 204px;
-        height: 24px;
-        margin-left: 5px;
-    }
-    .sbm{
-        height: 30px;
-        width: 120px;
-        margin-left: 40px;
-    }
-    </style>
+{% load staticfiles %}
+{% block db_main_style %}
+    <link rel="stylesheet" href="{% static 'css/school_manage_add_student.css' %}">
 {% endblock %}
 
-{% block mybody%}
+{% block db_main_body%}
     <div>
     <form action="" method="post">
         <div class="d1 styd1">
@@ -82,8 +20,8 @@
                 <tr>
                     <td>性别:</td>
                     <td>
-                        <label for="gm">男</label><input class="radio" id="gm" type="radio" name="gender" value="0">
-                        <label for="gn">女</label><input class="radio" id="gn" type="radio" name="gender" value="1">
+                        <label for="gm">男<input class="radio" id="gm" type="radio" name="gender" value="0"></label>
+                        <label for="gn">女<input class="radio" id="gn" type="radio" name="gender" value="1"></label>
                     </td>
                 </tr>
                 <tr>
@@ -95,7 +33,7 @@
                 <tr>
                     <td>注册日期:</td>
                     <td>
-                        <input type="date" name="register_date">
+                        <input type="date" name="register_date"">
                     </td>
                 </tr>
                 <tr>
@@ -148,8 +86,8 @@
                 <tr>
                     <td>状态:</td>
                     <td>
-                        <label for="st1">在读</label><input class="radio" id="st1" type="radio" name="status" value="0">
-                        <label for="st2">毕业</label><input class="radio" id="st2" type="radio" name="status" value="1">
+                        <label for="st1">在读<input class="radio" id="st1" type="radio" name="status" value="0"></label>
+                        <label for="st2">毕业<input class="radio" id="st2" type="radio" name="status" value="1"></label>
                     </td>
                 </tr>
                 <tr>

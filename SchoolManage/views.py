@@ -1,15 +1,19 @@
 from django.shortcuts import render, HttpResponse, HttpResponseRedirect
 from .models import *
 
-
 # Create your views here.
 
 # 管理页面首页
 def school_manage_index(request):
-    obj = Classes.objects.all()
-    return render(request, "school_manage_index.html", locals())
+
+    return render(request, "school_manage_index.html")
 
 # ---------------------------------    班级管理页面   --------------------------------------
+
+# 显示班级信息
+def school_manage_display_class(request):
+    obj = Classes.objects.all()
+    return render(request, "school_manage_display_class.html", locals())
 
 # 添加班级信息
 def school_manage_add_c(request):
@@ -19,14 +23,14 @@ def school_manage_add_c(request):
         class_name = request.POST.get('class_name')
         class_type = request.POST.get('class_type')
         Classes.objects.create(class_name=class_name, class_type=class_type)
-        return HttpResponseRedirect('/schoolmanage/index')
+        return HttpResponseRedirect('/schoolmanage/index/')
 
 # 删除班级信息
 def school_manage_del_class_info(request):
     if request.method == 'GET':
         cid = request.GET.get('cid')
         Classes.objects.filter(id=cid).delete()
-        return HttpResponseRedirect('/schoolmanage/index')
+        return HttpResponseRedirect('/schoolmanage/display_class/')
 
 #更新班级信息
 def school_manage_up_class_info(request):
@@ -39,13 +43,13 @@ def school_manage_up_class_info(request):
         class_name = request.POST.get('class_name')
         class_type = request.POST.get('class_type')
         Classes.objects.filter(id=cid).update(class_name=class_name, class_type=class_type)
-        return HttpResponseRedirect('/schoolmanage/index')
+        return HttpResponseRedirect('/schoolmanage/index/')
 
 # ---------------------------------    学生信息页面   --------------------------------------
 
 def school_manage_add_student(request):
     if request.method == 'GET':
-        return render(request, 'school_manage_add_student.html')
+        return render(request, 'school_manage_add_student.html', locals())
     elif request.method == 'POST':
         student_name = request.POST.get('student_name')
         # age = models.IntegerField('年龄')
@@ -78,9 +82,9 @@ def school_manage_add_student(request):
 
         sbm = request.POST.get('sbm')
         if sbm == '下一个':
-            return HttpResponseRedirect('/schoolmanage/index/display_student/add_student/')
+            return HttpResponseRedirect('/schoolmanage/add_student/')
         elif sbm == '提交保存':
-            return HttpResponseRedirect('/schoolmanage/index/display_student')
+            return HttpResponseRedirect('/schoolmanage/index/')
 
 def school_manage_display_student(request):
     obj = Student.objects.all()
@@ -90,7 +94,7 @@ def school_manage_delete_student(request):
     if request.method =='GET':
         cid = request.GET.get("cid")
         Student.objects.filter(id__exact=cid).delete()
-        return HttpResponseRedirect('/schoolmanage/index/display_student')
+        return HttpResponseRedirect('/schoolmanage/display_student/')
 
 def school_manage_update_student(request):
     if request.method == 'GET':
@@ -102,4 +106,4 @@ def school_manage_update_student(request):
         class_name = request.POST.get('class_name')
         class_type = request.POST.get('class_type')
         Classes.objects.filter(id=cid).update(class_name=class_name, class_type=class_type)
-        return HttpResponseRedirect('/schoolmanage/index/display_student')
+        return HttpResponseRedirect('/schoolmanage/display_student/')

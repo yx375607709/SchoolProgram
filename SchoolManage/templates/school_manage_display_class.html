@@ -1,0 +1,32 @@
+{% extends 'school_manage_template.html' %}
+
+{% block db_main_style %}
+<style>
+    table{
+        border-collapse: collapse;
+        border: 1px solid red;
+    }
+    tr,td{
+        border: 1px solid red;
+    }
+</style>
+{% endblock %}
+
+
+{% block db_main_body %}
+    <table>
+        <tr>
+            <td><h3>班级</h3></td>
+            <td><h3>年级</h3></td>
+            <td colspan="2"><h3>编辑</h3></td>
+        </tr>
+        {% for foo in obj %}
+            <tr>
+                <td><h4>{{ foo.class_name }}</h4></td>
+                <td><h4>{{ foo.class_type }}</h4></td>
+                <td><a href="{% url 'del_class_info.html' %}?cid={{ foo.id }}">删除</a></td>
+                <td><a href="{% url 'up_class_info.html' %}?cid={{ foo.id }}">更新</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
