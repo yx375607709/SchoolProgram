@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^display_student/$', views.school_manage_display_student, name='display_student'), # 显示学生信息
     url(r'^delete_student.html/$', views.school_manage_delete_student, name='delete_student.html'),  # 删除学生信息
     url(r'^update_student.html/$', views.school_manage_update_student, name='update_student.html'),  # 更新学生信息
-
+    # 分页信息
+    url(r'^student_page/$', views.student_page, name='student_page'),
 ]

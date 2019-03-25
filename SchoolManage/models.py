@@ -1,3 +1,4 @@
+
 from django.db import models
 
 # Create your models here.
@@ -35,4 +36,4 @@ class Student(models.Model):
     status = models.CharField('学生状态', max_length=12)
     market = models.CharField('备注', max_length=1024)
 
-    # cs = models.ForeignKey('Classes', on_delete=models.CASCADE)
+

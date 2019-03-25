@@ -26,7 +26,8 @@
         <td>身份证</td><td>户籍所在地</td><td>第二联系人</td><td>专业</td><td>现居住地</td>
         <td>状态</td><td>备注</td><td colspan="2">编辑</td>
     </tr>
-    {% for foo in obj %}
+{#    {% for foo in obj %}#}
+    {% for foo in student %}
         <tr>
             <td>{{ foo.student_name }}</td>
             <td>
@@ -59,4 +60,22 @@
         </tr>
     {% endfor %}
 </table>
+
+{#页面控制,显示上一页,下一页#}
+<div >
+    <span >
+        {#假如在尾页#}
+        {% if student.has_previous %}
+            <a href="?page={{ student.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span >
+            当前第 {{ student.number }} 页,共: {{ student.paginator.num_pages }} 页.
+        </span>
+        {#假如在首页#}
+        {% if student.has_next %}
+            <a href="?page={{ student.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
+</div>
 {% endblock %}

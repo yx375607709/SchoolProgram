@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse, HttpResponseRedirect
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import *
 
 # Create your views here.
@@ -87,7 +88,18 @@ def school_manage_add_student(request):
             return HttpResponseRedirect('/schoolmanage/index/')
 
 def school_manage_display_student(request):
-    obj = Student.objects.all()
+    # obj = Student.objects.all()
+    student_list = Student.objects.all()  # 获取所有srudent信息
+    paginator = Paginator(student_list, 3)  # 设置每页显示多少条信息
+    page = request.GET.get('page')  # 生成页面集合
+    try:
+        student = paginator.page(page)  # 页面对象
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        student = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        student = paginator.page(paginator.num_pages)
     return render(request, "school_manage_display_student.html", locals())
 
 def school_manage_delete_student(request):
@@ -107,3 +119,21 @@ def school_manage_update_student(request):
         class_type = request.POST.get('class_type')
         Classes.objects.filter(id=cid).update(class_name=class_name, class_type=class_type)
         return HttpResponseRedirect('/schoolmanage/display_student/')
+
+# --------------------------------------- 分页显示 -------------------------------------------
+
+def student_page(request):
+    student_list = Student.objects.all()  # 获取所有srudent信息
+    paginator = Paginator(student_list, 3) # 设置每页显示多少条信息
+    page = request.GET.get('page')  # 生成页面集合
+    try:
+        student = paginator.page(page) # 页面对象
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        student = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        student = paginator.page(paginator.num_pages)
+    print(student)
+    # return render(request, 'school_manage_display_student.html', {'student': student})
+    return HttpResponse('OK')
