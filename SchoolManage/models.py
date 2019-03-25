@@ -36,4 +36,9 @@ class Student(models.Model):
     status = models.CharField('学生状态', max_length=12)
     market = models.CharField('备注', max_length=1024)
 
+    def __str__(self):
+        return Student.student_name
+    class Meta:
+        ordering = ['id']
+
 

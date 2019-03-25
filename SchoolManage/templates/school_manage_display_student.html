@@ -20,46 +20,55 @@
 {% endblock %}
 
 {% block db_main_body%}
-<table>
-    <tr>
-        <td>姓名</td><td>性别</td><td>学生电话</td><td>注册日期</td><td>生源类型</td>
-        <td>身份证</td><td>户籍所在地</td><td>第二联系人</td><td>专业</td><td>现居住地</td>
-        <td>状态</td><td>备注</td><td colspan="2">编辑</td>
-    </tr>
-{#    {% for foo in obj %}#}
-    {% for foo in student %}
-        <tr>
-            <td>{{ foo.student_name }}</td>
-            <td>
-                {% if foo.gender %}
-                    女
-                {% else %}
-                    男
-                {% endif %}
-            </td>
-            <td>{{ foo.student_tel }}</td>
-            <td>{{ foo.register_date }}</td>
-            <td>{{ foo.student_type }}</td>
-            <td>{{ foo.id_card }}</td>
-            <td>{{ foo.location_of_household_registration }}</td>
-            <td>{{ foo.tel_two }}</td>
-            <td>{{ foo.major }}</td>
-            <td>{{ foo.address }}</td>
-            <td>
-                {% if foo.status %}
-                    毕业
-                {% else %}
-                    在读
-                {% endif %}
-            </td>
+    <div>
+        <table>
+            <tr>
+                <td>姓名</td><td>性别</td><td>学生电话</td><td>注册日期</td><td>生源类型</td>
+                <td>身份证</td><td>户籍所在地</td><td>第二联系人</td><td>专业</td><td>现居住地</td>
+                <td>状态</td><td>备注</td><td colspan="2">编辑</td>
+            </tr>
+        {#    {% for foo in obj %}#}
+            {% for foo in student %}
+                <tr>
+                    <td>{{ foo.student_name }}</td>
+                    <td>
+                        {% if foo.gender %}
+                            女
+                        {% else %}
+                            男
+                        {% endif %}
+                    </td>
+                    <td>{{ foo.student_tel }}</td>
+                    <td>{{ foo.register_date }}</td>
+                    <td>
+                        {% if foo.student_type == '1' %}
+                            统招
+                        {% else %}
+                            成考
+                        {% endif %}
+                    </td>
+                    <td>{{ foo.id_card }}</td>
+                    <td>{{ foo.location_of_household_registration }}</td>
+                    <td>{{ foo.tel_two }}</td>
+                    <td>{{ foo.major }}</td>
+                    <td>{{ foo.address }}</td>
+                    <td>
+                        {% if foo.status == '1'%}
+                            毕业
+                        {% else %}
+                            在读
+                        {% endif %}
+                    </td>
 
-            <td>{{ foo.market }}</td>
-{#            <td><input type="text" name="url" value="{{ url }}"></td>#}
-            <td><a href="{% url 'delete_student.html' %}?cid={{ foo.id }}">删除</a></td>
-            <td><a href="{% url 'update_student.html' %}?cid={{ foo.id }}">更新</a></td>
-        </tr>
-    {% endfor %}
-</table>
+                    <td>{{ foo.market }}</td>
+        {#            <td><input type="text" name="url" value="{{ url }}"></td>#}
+                    <td><a href="{% url 'delete_student.html' %}?cid={{ foo.id }}">删除</a></td>
+                    <td><a href="{% url 'update_student.html' %}?cid={{ foo.id }}">更新</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
 
 {#页面控制,显示上一页,下一页#}
 <div >
